@@ -1,0 +1,22 @@
+<template name="22106ac2">
+  <view class="_div data-v-bed145fa box">
+    <view class="_div data-v-bed145fa music">
+      <view class="_div data-v-bed145fa currency">
+        <image class="_img data-v-bed145fa leftpg" src="{{check}}" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}"></image>
+        <view class="_p data-v-bed145fa lfrtfont">乐库</view>
+      </view>
+    </view>
+    <view class="_div data-v-bed145fa audio">
+      <image class="_img data-v-bed145fa round" src="{{loadpg ? loadpg :minepg}}" animation="{{animationData}}" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}"></image>
+      <view class="_div data-v-bed145fa stops" wx:if="{{controlstate}}" catchtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}">
+        <image src="/image/th.png" class="_img data-v-bed145fa moment"></image>
+      </view>
+    </view>
+    <view class="_div data-v-bed145fa mine">
+      <view class="_div data-v-bed145fa currency">
+        <image class="_img data-v-bed145fa rightpg" src="{{minepg}}" bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}"></image>
+        <view class="_p data-v-bed145fa lfrtfont">我的</view>
+      </view>
+    </view>
+  </view>
+</template>

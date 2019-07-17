@@ -1,0 +1,19 @@
+{
+  "pages": [
+    "pages/mycomponents/index/main",
+    "pages/mycomponents/listmore/main",
+    "pages/mycomponents/listall/main",
+    "pages/mycomponents/listitem/main",
+    "pages/mycomponents/alllist/main",
+    "pages/mycomponents/mine/main",
+    "pages/mycomponents/playdetail/main",
+    "pages/searchdetail/main"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Robot Music",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap50.json"
+}

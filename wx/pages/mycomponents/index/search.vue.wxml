@@ -1,0 +1,7 @@
+<template name="1a28649c">
+  <view class="_div data-v-147f1cc1 box">
+    <view class="_div data-v-147f1cc1 try"><input type="text" placeholder="请输入歌手或歌曲名" bindfocus="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_input data-v-147f1cc1" />
+      <image class="_img data-v-147f1cc1 search" src="/image/211.png"></image>
+    </view>
+  </view>
+</template>

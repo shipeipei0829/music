@@ -1,0 +1,117 @@
+
+.background.data-v-2d9593de {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+}
+.popup.data-v-2d9593de {
+  width: 80vw;
+  border-radius: 10rpx;
+  background-color: white;
+}
+.opt.data-v-2d9593de {
+  padding: 20rpx;
+}
+.opt.data-v-2d9593de:first-child {
+  border-bottom: 2rpx solid #DCDFE6;
+}
+.box.data-v-2d9593de {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100rpx;
+  display: flex;
+  padding: 20rpx;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 0 10rpx #DCDFE6;
+  background-color: white;
+  z-index: 99;
+}
+._input.data-v-2d9593de {
+  background-color: #F2F6FC;
+  width: 100%;
+  text-align: center;
+  font-size: 28rpx;
+  border-radius: 40rpx;
+}
+.try.data-v-2d9593de {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search.data-v-2d9593de {
+  position: absolute;
+  width: 28rpx;
+  height: 28rpx;
+  left: 26vw;
+}
+.delete.data-v-2d9593de {
+  position: absolute;
+  width: 28rpx;
+  height: 28rpx;
+  right: 20rpx;
+  z-index: 99;
+}
+.songsbox.data-v-2d9593de {
+  margin-top: 142rpx;
+}
+.item.data-v-2d9593de {
+  padding: 2vw 3vw 0 3vw;
+  display: flex;
+  align-items: center;
+}
+.love.data-v-2d9593de {
+  width: 5vw;
+  height: 5vw;
+}
+.love.data-v-2d9593de:last-child {
+  margin-left: 40rpx;
+}
+.p1.data-v-2d9593de {
+  font-size: 30rpx;
+}
+.p2.data-v-2d9593de {
+  font-size: 30rpx;
+  color: #1296db;
+}
+.span2.data-v-2d9593de {
+  font-size: 22rpx;
+  color: #909399;
+}
+.span1.data-v-2d9593de {
+  font-size: 22rpx;
+  color: #1296db;
+}
+.num.data-v-2d9593de {
+  width: 5vw;
+  font-size: 26rpx;
+  color: #606266;
+  padding: 0 3vw 0 0;
+  text-align: center;
+}
+.songs.data-v-2d9593de {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  border-bottom: 2rpx solid #DCDFE6;
+}
+.blue.data-v-2d9593de {
+  color: blue;
+}
+.partone.data-v-2d9593de {
+  flex: 8;
+}
+.parttwo.data-v-2d9593de {
+  flex: 2;
+}

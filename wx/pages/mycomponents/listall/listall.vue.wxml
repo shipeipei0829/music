@@ -1,0 +1,12 @@
+<template name="30d6def0">
+  <view class="_div data-v-878f502a box">
+    <view class="_div data-v-878f502a itembox">
+      <view class="_div data-v-878f502a item" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}" wx:for="{{obj}}" wx:for-index="index" wx:for-item="item">
+        <view class="_div data-v-878f502a imgbox">
+          <image src="{{item.coverImgUrl}}" alt="资源错误" class="_img data-v-878f502a"></image>
+        </view>
+        <view class="_p data-v-878f502a name">{{item.name}}</view>
+      </view>
+    </view>
+  </view>
+</template>

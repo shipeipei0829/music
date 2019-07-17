@@ -1,0 +1,6 @@
+<import src="/pages/mycomponents/index/search.vue.wxml" />
+<import src="/pages/mycomponents/index/hostsongs.vue.wxml" />
+<import src="/pages/mycomponents/index/newsongs.vue.wxml" />
+<import src="/pages/mycomponents/index/hostlist.vue.wxml" />
+<import src="/pages/mycomponents/index/songslist.vue.wxml" />
+<import src="/pages/mycomponents/footer/footer.vue.wxml" />

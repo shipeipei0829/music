@@ -1,0 +1,15 @@
+<template name="9681dc30">
+  <view class="_div data-v-40208ae3 box">
+    <view class="_div data-v-40208ae3 itembox">
+      <view class="_div data-v-40208ae3 item" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}" wx:for="{{listpg}}" wx:for-index="index" wx:for-item="item">
+        <view class="_div data-v-40208ae3 imgbox">
+          <image src="{{listpg[index]}}" alt="资源错误" class="_img data-v-40208ae3"></image>
+        </view>
+        <view class="_div data-v-40208ae3 text">
+          <view class="_p data-v-40208ae3 bangdan">{{listname[index]}} </view>
+          <view class="_p data-v-40208ae3 name" wx:key="count" key="{{count}}" wx:for="{{showthree[index]}}" wx:for-index="count" wx:for-item="part">{{part.singer}}-{{part.name}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,19 @@
+<template name="39d48e02">
+  <view class="_div data-v-f7e99e7a content">
+    <image class="_img data-v-f7e99e7a box" src="{{loadpg}}"></image>
+    <view class="_div data-v-f7e99e7a bg">
+      <view class="_p data-v-f7e99e7a p3">{{song}}-{{singer}}</view>
+      <view class="_div data-v-f7e99e7a round" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">
+        <image class="_img data-v-f7e99e7a roundpg" src="{{loadpg}}" animation="{{animationData}}"></image>
+        <view class="_div data-v-f7e99e7a stopbox" wx:if="{{control}}">
+          <image src="/image/th.png" class="_img data-v-f7e99e7a stop" catchtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}"></image>
+        </view>
+      </view>
+      <scroll-view class="_scroll-view data-v-f7e99e7a lrc" scroll-y="true" scroll-with-animation="true" scroll-into-view="{{'line'+(playcount-2)}}">
+        <view class="_div data-v-f7e99e7a">
+          <view id="{{'line'+index}}" wx:key="index" key="{{index}}" wx:for="{{lrcline.lines}}" wx:for-index="index" wx:for-item="item" class="_p data-v-f7e99e7a {{index === playcount ? 'p2' : 'p1'}}">{{item.txt}}</view>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+</template>

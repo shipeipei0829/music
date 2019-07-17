@@ -1,0 +1,36 @@
+<template name="fb8e2dfc">
+  <view class="_div data-v-6b3e0b03 box">
+    <view class="_div data-v-6b3e0b03 background" wx:if="{{popnow}}">
+      <view class="_div data-v-6b3e0b03 popup">
+        <view class="_p data-v-6b3e0b03 opt" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">移出该歌曲</view>
+        <view class="_p data-v-6b3e0b03 opt" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">取消</view>
+      </view>
+    </view>
+    <view class="_div data-v-6b3e0b03 header">
+      <image class="_img data-v-6b3e0b03 header-bg" src="{{userInfo.avatarUrl}}"></image>
+      <view class="_div data-v-6b3e0b03 colorfor">
+        <image class="_img data-v-6b3e0b03 touxiang" src="{{userInfo.avatarUrl}}"></image>
+        <view class="_p data-v-6b3e0b03 text">{{userInfo.nickName}}</view>
+      </view>
+    </view>
+    <view class="_div data-v-6b3e0b03 songsbox">
+      <view class="_div data-v-6b3e0b03 option">
+        <view bindtap="handleProxy" ref="sss" data-eventid="{{'2'}}" data-comkey="{{$k}}" class="_div data-v-6b3e0b03 {{style}}">最近/{{rcount}}</view>
+        <view bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}" class="_div data-v-6b3e0b03 {{styleother}}">收藏/{{lcount}}</view>
+        <view style="clear:both" class="_div data-v-6b3e0b03"></view>
+      </view>
+      <view wx:key="index" key="{{index}}" class="_div data-v-6b3e0b03 item" bindtap="handleProxy" data-eventid="{{'6_'+index}}" data-comkey="{{$k}}" wx:for="{{obj}}" wx:for-index="index" wx:for-item="item">
+        <view class="_div data-v-6b3e0b03 num">{{index+1}}</view>
+        <view class="_div data-v-6b3e0b03 songs">
+          <view class="_div data-v-6b3e0b03 partone">
+            <view class="_p data-v-6b3e0b03 {{id == index ? p2 : p1}}">{{item.name}}</view> <label class="_span data-v-6b3e0b03 {{id == index ? span1 : span2}}">{{item.singer}}</label>
+          </view>
+          <view class="_div data-v-6b3e0b03 parttwo">
+            <image class="_img data-v-6b3e0b03 love" src="{{mid==index ? playing :play}}" catchtap="handleProxy" data-eventid="{{'4_'+index}}" data-comkey="{{$k}}"></image>
+            <image class="_img data-v-6b3e0b03 love" src="/image/more.png" catchtap="handleProxy" data-eventid="{{'5_'+index}}" data-comkey="{{$k}}"></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

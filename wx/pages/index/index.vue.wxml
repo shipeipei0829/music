@@ -1,0 +1,19 @@
+<import src="/pages/mycomponents/index/search.vue.wxml" />
+<import src="/pages/mycomponents/index/hostsongs.vue.wxml" />
+<import src="/pages/mycomponents/index/newsongs.vue.wxml" />
+<import src="/pages/mycomponents/index/hostlist.vue.wxml" />
+<import src="/pages/mycomponents/index/songslist.vue.wxml" />
+<import src="/pages/mycomponents/footer/footer.vue.wxml" /><template name="3716c3d0">
+  <view class="_div data-v-0f999fb8 box">
+    <view class="_div data-v-0f999fb8 cool" wx:if="{{jws}}">
+      <view class="_div data-v-0f999fb8 imgbox">
+        <image src="/image/15.png" class="_img data-v-0f999fb8 pg"></image>
+      </view>
+      <view class="_div data-v-0f999fb8 bug">
+        <view class="_p data-v-0f999fb8 welcome">You are Welcome Sir</view>
+        <image src="/image/1120.png" class="_img data-v-0f999fb8 loading" animation="{{animationData}}" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}"></image>
+        <view class="_p data-v-0f999fb8"></view>
+      </view>
+    </view> <template data="{{...$root[$kk+'0'], $root}}" is="1a28649c"></template> <template data="{{...$root[$kk+'1'], $root}}" is="a886e9dc"></template> <template data="{{...$root[$kk+'2'], $root}}" is="1aab1552"></template> <template data="{{...$root[$kk+'3'], $root}}" is="54f46b3a"></template> <template data="{{...$root[$kk+'4'], $root}}" is="6f912658"></template> <template data="{{...$root[$kk+'5'], $root}}" is="22106ac2"></template>
+  </view>
+</template>

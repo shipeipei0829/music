@@ -1,0 +1,16 @@
+<template name="a886e9dc">
+  <view class="_div data-v-4548b666 box">
+    <view class="_div data-v-4548b666 title">
+      <view class="_p data-v-4548b666 host">热门歌曲</view>
+      <view class="_p data-v-4548b666 more" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">更多＞</view>
+    </view>
+    <view class="_div data-v-4548b666 itembox">
+      <view class="_div data-v-4548b666 item" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'1_'+index}}" data-comkey="{{$k}}" wx:for="{{obj}}" wx:for-index="index" wx:for-item="item">
+        <view class="_div data-v-4548b666 imgbox">
+          <image src="{{item.pic}}" alt="资源错误" class="_img data-v-4548b666"></image>
+        </view>
+        <view class="_p data-v-4548b666 name">{{item.name}}</view> <label class="_span data-v-4548b666 singer">{{item.singer}}</label>
+      </view>
+    </view>
+  </view>
+</template>

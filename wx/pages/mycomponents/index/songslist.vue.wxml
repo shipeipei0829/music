@@ -1,0 +1,19 @@
+<template name="6f912658">
+  <view class="_div data-v-bd9f7fda box">
+    <view class="_div data-v-bd9f7fda title">
+      <view class="_p data-v-bd9f7fda host">歌单</view>
+      <view class="_p data-v-bd9f7fda more" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">更多＞</view>
+    </view>
+    <view class="_div data-v-bd9f7fda itembox">
+      <view class="_div data-v-bd9f7fda item" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'1_'+index}}" data-comkey="{{$k}}" wx:for="{{listpg}}" wx:for-index="index" wx:for-item="item">
+        <view class="_div data-v-bd9f7fda imgbox">
+          <image src="{{listpg[index]}}" alt="资源错误" class="_img data-v-bd9f7fda"></image>
+        </view>
+        <view class="_div data-v-bd9f7fda text">
+          <view class="_p data-v-bd9f7fda bangdan">{{listname[index]}} </view>
+          <view class="_p data-v-bd9f7fda name" wx:key="count" key="{{count}}" wx:for="{{showthree[index]}}" wx:for-index="count" wx:for-item="part">{{part.singer}}-{{part.name}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

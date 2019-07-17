@@ -1,0 +1,30 @@
+<template name="070b6fcc">
+  <view class="_div data-v-2d9593de">
+    <view class="_div data-v-2d9593de box">
+      <view class="_div data-v-2d9593de background" wx:if="{{popnow}}">
+        <view class="_div data-v-2d9593de popup">
+          <view class="_p data-v-2d9593de opt" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">收藏歌曲</view>
+          <view class="_p data-v-2d9593de opt" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">取消</view>
+        </view>
+      </view>
+      <view class="_div data-v-2d9593de try"><input type="text" placeholder="请输入歌手或歌曲名" bindfocus="handleProxy" value="{{keyword}}" bindblur="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}" class="_input data-v-2d9593de" />
+        <image class="_img data-v-2d9593de search" src="/image/211.png" wx:if="{{show}}"></image>
+        <image class="_img data-v-2d9593de delete" src="/image/112.png" wx:if="{{deorno}}" catchtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}"></image>
+      </view>
+    </view>
+    <view class="_div data-v-2d9593de songsbox">
+      <view wx:key="item.id" key="{{item.id}}" class="_div data-v-2d9593de item" bindtap="handleProxy" data-eventid="{{'6_'+index}}" data-comkey="{{$k}}" wx:for="{{obj}}" wx:for-index="index" wx:for-item="item">
+        <view class="_div data-v-2d9593de num">{{index+1}}</view>
+        <view class="_div data-v-2d9593de songs">
+          <view class="_div data-v-2d9593de partone">
+            <view class="_p data-v-2d9593de {{id == index ? p2 : p1}}">{{item.name}}</view> <label class="_span data-v-2d9593de {{id == index ? span1 : span2}}">{{item.singer}}</label>
+          </view>
+          <view class="_div data-v-2d9593de parttwo">
+            <image class="_img data-v-2d9593de love" src="{{mid==index ? playing :play}}" catchtap="handleProxy" data-eventid="{{'4_'+index}}" data-comkey="{{$k}}"></image>
+            <image class="_img data-v-2d9593de love" src="/image/more.png" catchtap="handleProxy" data-eventid="{{'5_'+index}}" data-comkey="{{$k}}"></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>
